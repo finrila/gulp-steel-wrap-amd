@@ -1,5 +1,6 @@
 /**
  * define transport
+ * @author Finrila finrila@gmail.com 
  */
 'use strict';
 
