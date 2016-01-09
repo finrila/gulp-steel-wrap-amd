@@ -20,7 +20,7 @@ module.exports = function(options) {
     }
     function getDeps(src) {
         var deps = [];
-        removeComment(src).replace(/\brequire\(['"](.*?)['"]\)/g, function(_, moduleId) {
+        removeComment(src).replace(/\brequire\([ \t\n\r]*['"](.*?)['"][ \t\n\r]*\)/g, function(_, moduleId) {
             deps.push(moduleId);
         });
         return deps;
